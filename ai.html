@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+
+<html> 
+    
+    <head>
+        <link  rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script> 
+            know = { "Hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!", 
+"hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!",
+ "HELLO" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!", 
+"Who are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am your Assistant",
+ "How are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Fine",
+ "How old are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age",
+ "hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!",
+ "Hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!",
+ "What is your name" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp My name is Funybot",
+ "What do you like" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp helping you",
+ "Really" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp yes",
+ "No" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp why? Am I not your best friend...",
+ "Why" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp means???",
+ "Yes" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp wow!",
+  "Play a song" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp There is not any song in your library",
+  "Sing a song" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp There is not any song in your library",
+" " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Please a valid  question",
+ "Means" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp What???",
+ "Tell me a joke" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ",
+ "You are bad" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Why???",
+
+"Hello " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!", 
+"hello " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!",
+ "HELLO " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!", 
+"Who are you " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am your Assistant",
+ "How are you " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Fine",
+ "How old are you " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age",
+ "hi " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!",
+ "Hi " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Hi there!",
+ "What is your name " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp My name is Funybot",
+ "What do you like " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp helping you",
+ "Really " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp yes",
+ "No " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp why? Am I not your best friend...",
+ "Why " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp means???",
+ "Yes " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp wow!",
+  "Play a song " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp There is not any song in your library",
+  "Sing a song " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp There is not any song in your library",
+" " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Please a valid  question",
+ "Means " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp What???",
+ "Tell me a joke " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Chintu Says to his mother:Maa, can I<br> watch more TV?<br> Maa:Only,if you don't turn it on",
+ "You are bad " : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Why???",
+
+
+
+}; 
+
+function talk() { 
+var user = document.getElementById("userBox").value; 
+document.getElementById("userBox").value= ""; 
+document.getElementById("chatLog").innerHTML += user+"<br>";
+ 
+if (user in know) { 
+document.getElementById("chatLog").innerHTML += know[user] + "<br><br>"; 
+
+} 
+
+else { 
+document.getElementById("chatLog").innerHTML += "Sorry, out of my knowledge... <br><br>";
+ } }
+ </script>
+  
+        <title>swasth-banega-India</title>
+</head>
+    <body style="background-image: url('cool.png');   background-repeat:no-repeat;;background-attachment:scroll;;background-size:cover;;">
+        
+        <div class="ainav"><a href="index.html"><i class="fa fa-arrow-left fa-2x"></i></a></div>
+        
+        
+        <p id="chatLog">Hello, I am your assistant <br></p>
+        <p id="chatLog"> <br> </p>
+        
+       <a href="shoping.html"><i class="fa fa-shopping-bag fa-2x"></i></a>
+     <a href="exercise.html"> <i class="fa fa-male fa-2x"></i></a>
+        <input id="userBox" placeholder="ask a question" type="text" onkeydown="if(event.keyCode == 13) {talk()}">
+        <i class="fa fa-microphone fa-2x"></i>
+    </body> 
+</html>
